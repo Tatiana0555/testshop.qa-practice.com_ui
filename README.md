@@ -1,2 +1,1 @@
 # testshop.qa-practice.com_UI
-
