@@ -7,6 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Run autotests
     steps:
+      - name: Debug current directory
+        run: |
+          pwd
+          ls -R
       - name: Checkout autotests
         uses: actions/checkout@v5
         
