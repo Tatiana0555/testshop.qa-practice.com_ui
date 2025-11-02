@@ -1,7 +1,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from testshop_qa_practice_ui.pages.base_page import BasePage
-from testshop_qa_practice_ui.pages.locators import category_locators as loc
+from pages.base_page import BasePage
+from pages.locators import category_locators as loc
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 
 

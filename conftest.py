@@ -1,9 +1,9 @@
 from selenium import webdriver
 import pytest
 from selenium.webdriver.chrome.options import Options
-from testshop_qa_practice_ui.pages.desks_page import DesksPage
-from testshop_qa_practice_ui.pages.cart_page import CartPage
-from testshop_qa_practice_ui.pages.product_page import ProductPage
+from pages.desks_page import DesksPage
+from pages.cart_page import CartPage
+from pages.product_page import ProductPage
 
 
 @pytest.fixture()

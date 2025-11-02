@@ -1,8 +1,8 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from testshop_qa_practice_ui.pages.locators import product_locators as loc
+from pages.locators import product_locators as loc
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
-from testshop_qa_practice_ui.pages.base_page import BasePage
+from pages.base_page import BasePage
 from selenium.common.exceptions import ElementClickInterceptedException
 
 
