@@ -9,11 +9,17 @@ jobs:
     steps:
       - name: Checkout autotests
         uses: actions/checkout@v5
+        
       - name: Set up Python environment
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v6        
         with:
           python-version: '3.11'
+          
       - name: Install dependencies.
         run: pip install -r requirements.txt
+
+      - name: Add project to PYTHONPATH
+        run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
+        
       - name: run tests
         run: pytest
